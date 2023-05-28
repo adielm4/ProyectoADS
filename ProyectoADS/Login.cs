@@ -78,43 +78,43 @@ namespace Proyecto
                 errorProvider1.SetError(textBox2, "Debe ingresar una contraseña apropiada.");
             }
 
-            //if (state)
-            //{
-            //    string tipo = consultas.autentificarse(textBox1.Text, textBox2.Text);
-            //    int idLogeado = consultas.idUsuarioLogeado(textBox1.Text, textBox2.Text);
-            //    switch (tipo)
-            //    {
-            //        case "1":
-            //            this.Dispose();
-            //            Administrador admin = new Administrador();
-            //            admin.ShowDialog();
-            //            break;
-            //        case "2":
-            //            this.Dispose();
-            //            JefeAreaFuncional JAF = new JefeAreaFuncional(idLogeado);
-            //            JAF.ShowDialog();
-            //            break;
-            //        case "3":
-            //            this.Dispose();
-            //            JefeDesarrollo JD = new JefeDesarrollo(idLogeado);
-            //            JD.ShowDialog();
-            //            break;
-            //        case "4":
-            //            this.Dispose();
-            //            tester frmTester = new tester(idLogeado);
-            //            frmTester.ShowDialog();
-            //            break;
-            //        case "5":
-            //            this.Dispose();
-            //            Programador coder = new Programador(idLogeado);
-            //            coder.ShowDialog();
-            //            break;
-            //        default:
-            //            label1.Text = "Usuario no válido";
-            //            break;
-            //    }
-            //}
-        }
+            if (state)
+            {
+                string tipo = consultas.autentificarse(textBox1.Text, textBox2.Text);
+                int idLogeado = consultas.idUsuarioLogeado(textBox1.Text, textBox2.Text);
+                switch (tipo)
+                {
+                    case "1":
+                        this.Dispose();
+                        Administrador admin = new Administrador();
+                        admin.ShowDialog();
+                        break;
+                    //        case "2":
+                    //            this.Dispose();
+                    //            JefeAreaFuncional JAF = new JefeAreaFuncional(idLogeado);
+                    //            JAF.ShowDialog();
+                    //            break;
+                    //        case "3":
+                    //            this.Dispose();
+                    //            JefeDesarrollo JD = new JefeDesarrollo(idLogeado);
+                    //            JD.ShowDialog();
+                    //            break;
+                    //        case "4":
+                    //            this.Dispose();
+                    //            tester frmTester = new tester(idLogeado);
+                    //            frmTester.ShowDialog();
+                    //            break;
+                    //        case "5":
+                    //            this.Dispose();
+                    //            Programador coder = new Programador(idLogeado);
+                    //            coder.ShowDialog();
+                    //            break;
+                    default:
+                        label1.Text = "Usuario no válido";
+                        break;
+                }
+            }
+            }
 
         private void pictureBox4_MouseDown(object sender, MouseEventArgs e)
         {
