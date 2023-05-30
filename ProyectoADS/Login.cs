@@ -89,16 +89,16 @@ namespace Proyecto
                         Administrador admin = new Administrador();
                         admin.ShowDialog();
                         break;
-                            case "2":
-                                this.Dispose();
-                                JefeAreaFuncional JAF = new JefeAreaFuncional(idLogeado);
-                                JAF.ShowDialog();
-                                break;
-                    //        case "3":
-                    //            this.Dispose();
-                    //            JefeDesarrollo JD = new JefeDesarrollo(idLogeado);
-                    //            JD.ShowDialog();
-                    //            break;
+                    case "2":
+                        this.Dispose();
+                        JefeAreaFuncional JAF = new JefeAreaFuncional(idLogeado);
+                        JAF.ShowDialog();
+                        break;
+                    case "3":
+                        this.Dispose();
+                        JefeDesarrollo JD = new JefeDesarrollo(idLogeado);
+                        JD.ShowDialog();
+                        break;
                     //        case "4":
                     //            this.Dispose();
                     //            tester frmTester = new tester(idLogeado);
