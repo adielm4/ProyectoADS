@@ -99,22 +99,22 @@ namespace Proyecto
                         JefeDesarrollo JD = new JefeDesarrollo(idLogeado);
                         JD.ShowDialog();
                         break;
-                    //        case "4":
+                    //case "4":
                     //            this.Dispose();
                     //            tester frmTester = new tester(idLogeado);
                     //            frmTester.ShowDialog();
                     //            break;
-                    //        case "5":
-                    //            this.Dispose();
-                    //            Programador coder = new Programador(idLogeado);
-                    //            coder.ShowDialog();
-                    //            break;
+                    case "5":
+                        this.Dispose();
+                        Programador coder = new Programador(idLogeado);
+                        coder.ShowDialog();
+                        break;
                     default:
                         label1.Text = "Usuario no válido";
                         break;
                 }
             }
-            }
+        }
 
         private void pictureBox4_MouseDown(object sender, MouseEventArgs e)
         {
@@ -128,8 +128,6 @@ namespace Proyecto
             pictureBox4.Image = Resources.ojo2;
             textBox2.PasswordChar = '*';
         }
-
-
-    }
+   }
 }
 
