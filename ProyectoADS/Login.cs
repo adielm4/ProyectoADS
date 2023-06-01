@@ -99,11 +99,11 @@ namespace Proyecto
                         JefeDesarrollo JD = new JefeDesarrollo(idLogeado);
                         JD.ShowDialog();
                         break;
-                    //case "4":
-                    //            this.Dispose();
-                    //            tester frmTester = new tester(idLogeado);
-                    //            frmTester.ShowDialog();
-                    //            break;
+                    case "4":
+                        this.Dispose();
+                        tester frmTester = new tester(idLogeado);
+                        frmTester.ShowDialog();
+                        break;
                     case "5":
                         this.Dispose();
                         Programador coder = new Programador(idLogeado);
